@@ -1,2 +1,2 @@
 # linguagem-java
-Atividades práticas em Java.
+Atividades práticas da faculdade em linguagem Java.
