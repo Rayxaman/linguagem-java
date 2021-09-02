@@ -1,0 +1,51 @@
+/*
+ Elabore o cálculo do peso ideal, através do IMC (índice de massa corporal). 
+ Para isso, utilize a fórmula: IMC = peso / altura^2.
+ Receba peso e altura.
+ */
+package javaapplication.imc;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Rayssa
+ */
+public class JavaApplicationIMC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        String aux = "";
+        float peso=0, altura=0;
+        double imc;
+        
+        aux = JOptionPane.showInputDialog("Informe o seu peso: ");
+        peso = Float.parseFloat(aux);
+        
+        aux = JOptionPane.showInputDialog("Informe a sua altura: ");
+        altura = Float.parseFloat(aux);
+        
+        imc = Math.pow(peso / altura, 2);
+        
+        if (imc < 18.5){
+            System.out.print("O IMC está abaixo do normal" + imc);
+       } else 
+            if (imc >= 18.5 && <= 24.4){
+                System.out.print("O IMC está ideal" + imc);
+        }   else
+                if (imc >= 24.5 && <= 29.9){
+                    System.out.print("O IMC indica pré-obesidade" + imc);
+        }       else 
+                    if (imc >= 30 && <= 34.9){
+                        System.out.print("O IMC indica obesidade classe I" + imc);
+        }           else 
+                        if (imc >= 35 && <= 39.9){
+                            System.out.print("O IMC indica obesidade classe II" + imc);
+        }               else{
+                                System.out.print("O IMC indica obesidade classe III" + imc);
+        }
+    }
+    
+}
