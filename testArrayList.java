@@ -1,8 +1,8 @@
 /*
-    Usando ArrayList Unidimensional
+    Trabalhando com ArrayList Unidimensional
  */
 package vetores;
-import java.util.ArrayList;
+import java.util.*;
 /**
  *
  * @author Rayssa
